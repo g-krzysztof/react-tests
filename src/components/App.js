@@ -1,7 +1,7 @@
 import React from 'react';
-import './App.css';
-import CommentList from './CommentList';
-import CommentBox from './CommentBox';
+import 'components/App.css';
+import CommentList from 'components/CommentList';
+import CommentBox from 'components/CommentBox';
 
 function App() {
   return (
