@@ -1,5 +1,14 @@
 import React from 'react';
 
-export default () => {
-    return <div>Comment Box</div>
+class CommentBox extends React.Component {
+    state = {}
+    render() {
+        return (
+            <div>
+                Comment Box
+            </div>
+        );
+    }
 }
+
+export default CommentBox;
