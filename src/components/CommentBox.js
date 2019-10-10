@@ -4,9 +4,13 @@ class CommentBox extends React.Component {
     state = {}
     render() {
         return (
-            <div>
-                Comment Box
-            </div>
+            <form>
+                <h4>Add a comment</h4>
+                <textarea></textarea>
+                <div>
+                    <button>Submit Comment</button>
+                </div>
+            </form>
         );
     }
 }
