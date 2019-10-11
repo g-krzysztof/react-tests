@@ -18,3 +18,14 @@ it('has a text area and a button', () => {
     expect(wrapped.find('button').length).toEqual(1);
 
 });
+
+it('has a text area that users can type in', () => {
+
+    wrapped.find('textarea').simulate('change', {
+        target: { value: 'new comment' }
+    });
+    // render after onChange setState
+    wrapped.update();
+
+    expect(wrapped.find('textarea').prop('value')).toEqual('new comment');
+});
